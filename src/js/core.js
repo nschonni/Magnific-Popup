@@ -118,8 +118,8 @@ MagnificPopup.prototype = {
 	 */
 	init: function() {
 		var appVersion = navigator.appVersion;
-		mfp.isIE7 = appVersion.indexOf("MSIE 7.") !== -1; 
-		mfp.isIE8 = appVersion.indexOf("MSIE 8.") !== -1;
+		mfp.isIE7 = appVersion.indexOf('MSIE 7.') !== -1; 
+		mfp.isIE8 = appVersion.indexOf('MSIE 8.') !== -1;
 		mfp.isLowIE = mfp.isIE7 || mfp.isIE8;
 		mfp.isAndroid = (/android/gi).test(appVersion);
 		mfp.isIOS = (/iphone|ipad|ipod/gi).test(appVersion);
@@ -798,8 +798,8 @@ MagnificPopup.prototype = {
 	_getScrollbarSize: function() {
 		// thx David
 		if(mfp.scrollbarSize === undefined) {
-			var scrollDiv = document.createElement("div");
-			scrollDiv.id = "mfp-sbm";
+			var scrollDiv = document.createElement('div');
+			scrollDiv.id = 'mfp-sbm';
 			scrollDiv.style.cssText = 'width: 99px; height: 99px; overflow: scroll; position: absolute; top: -9999px;';
 			document.body.appendChild(scrollDiv);
 			mfp.scrollbarSize = scrollDiv.offsetWidth - scrollDiv.clientWidth;
@@ -904,7 +904,7 @@ $.fn.magnificPopup = function(options) {
 	var jqEl = $(this);
 
 	// We call some API method of first param is a string
-	if (typeof options === "string" ) {
+	if (typeof options === 'string' ) {
 
 		if(options === 'open') {
 			var items,

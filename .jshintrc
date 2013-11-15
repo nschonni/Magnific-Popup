@@ -17,5 +17,6 @@
     "module",
     "mfp"
   ],
-  "jquery": true
+  "jquery": true,
+  "quotmark": "single"
 }
